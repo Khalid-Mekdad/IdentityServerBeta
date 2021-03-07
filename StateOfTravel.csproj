@@ -28,4 +28,8 @@
     <Folder Include="Data\Migrations\IdentityServer\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\StateOfTravel.Core\StateOfTravel.Core.csproj" />
+  </ItemGroup>
+
 </Project>

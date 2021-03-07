@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using StateOfTravel.Core.Aggregates;
 
 namespace StateOfTravel
 {
-    public class IdentityAppContext : IdentityDbContext<IdentityUser>
+    public class IdentityAppContext : IdentityDbContext<ApplicationUser>
     {
         public IdentityAppContext(DbContextOptions<IdentityAppContext> options)
             : base(options)

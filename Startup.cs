@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 using System;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using StateOfTravel.Core.Aggregates;
 
 namespace StateOfTravel
 {
@@ -38,7 +38,7 @@ namespace StateOfTravel
             services.AddDbContext<IdentityAppContext>(options =>
                  options.UseSqlServer(connectionString, b => b.MigrationsAssembly(migrationsAssembly)));
 
-            services.AddIdentity<IdentityUser, IdentityRole>(options =>
+            services.AddIdentity<ApplicationUser, IdentityRole>(options =>
             {
                 options.User.RequireUniqueEmail = true;
                 options.Password.RequiredLength = 8;
@@ -76,7 +76,7 @@ namespace StateOfTravel
 
                     // this enables automatic token cleanup. this is optional.
                     options.EnableTokenCleanup = true;
-                }).AddAspNetIdentity<IdentityUser>();
+                }).AddAspNetIdentity<ApplicationUser>();
 
             // not recommended for production - you need to store your key material somewhere secure
             builder.AddDeveloperSigningCredential();
