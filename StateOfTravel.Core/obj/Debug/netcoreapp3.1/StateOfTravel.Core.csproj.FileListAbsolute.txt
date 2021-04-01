@@ -7,3 +7,11 @@ S:\repos\StateOfTravel.Core\obj\Debug\netcoreapp3.1\StateOfTravel.Core.AssemblyI
 S:\repos\StateOfTravel.Core\obj\Debug\netcoreapp3.1\StateOfTravel.Core.csproj.CoreCompileInputs.cache
 S:\repos\StateOfTravel.Core\obj\Debug\netcoreapp3.1\StateOfTravel.Core.dll
 S:\repos\StateOfTravel.Core\obj\Debug\netcoreapp3.1\StateOfTravel.Core.pdb
+S:\repos\IdentityServerBeta\StateOfTravel.Core\bin\Debug\netcoreapp3.1\StateOfTravel.Core.deps.json
+S:\repos\IdentityServerBeta\StateOfTravel.Core\bin\Debug\netcoreapp3.1\StateOfTravel.Core.dll
+S:\repos\IdentityServerBeta\StateOfTravel.Core\bin\Debug\netcoreapp3.1\StateOfTravel.Core.pdb
+S:\repos\IdentityServerBeta\StateOfTravel.Core\obj\Debug\netcoreapp3.1\StateOfTravel.Core.AssemblyInfoInputs.cache
+S:\repos\IdentityServerBeta\StateOfTravel.Core\obj\Debug\netcoreapp3.1\StateOfTravel.Core.AssemblyInfo.cs
+S:\repos\IdentityServerBeta\StateOfTravel.Core\obj\Debug\netcoreapp3.1\StateOfTravel.Core.csproj.CoreCompileInputs.cache
+S:\repos\IdentityServerBeta\StateOfTravel.Core\obj\Debug\netcoreapp3.1\StateOfTravel.Core.dll
+S:\repos\IdentityServerBeta\StateOfTravel.Core\obj\Debug\netcoreapp3.1\StateOfTravel.Core.pdb

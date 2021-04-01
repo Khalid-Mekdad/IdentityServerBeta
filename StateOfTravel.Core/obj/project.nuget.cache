@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lAc01UPyDyvIMwUoQUl5WyC+VrQXbq/XXtpvjrdZsC8Tgsn7uAjPSacOTjZ990gy3lgKLD7laG/pECP7sKEyJQ==",
+  "dgSpecHash": "ztQkN36XfUDDJ5NW9816iTnHUfyvlHb4735hbcwD0/DN9SIfS1zIeBfUrXP5aYgSmLbyPlmC5F4zEoq3gBSO1g==",
   "success": true,
-  "projectFilePath": "S:\\repos\\StateOfTravel.Core\\StateOfTravel.Core.csproj",
+  "projectFilePath": "S:\\repos\\IdentityServerBeta\\StateOfTravel.Core\\StateOfTravel.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Home\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.4\\microsoft.aspnetcore.cryptography.internal.5.0.4.nupkg.sha512",
     "C:\\Users\\Home\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.4\\microsoft.aspnetcore.cryptography.keyderivation.5.0.4.nupkg.sha512",
