@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using IdentityServer4.Events;
 using IdentityServer4.Extensions;
+using StateOfTravel.Constants;
 
 namespace IdentityServerHost.Quickstart.UI
 {
@@ -18,7 +19,7 @@ namespace IdentityServerHost.Quickstart.UI
     /// This sample controller allows a user to revoke grants given to clients
     /// </summary>
     [SecurityHeaders]
-    [Authorize]
+    [Authorize(AuthenticationSchemes = CustomIdentityServerConstants.AuthenticationScheme)]
     public class GrantsController : Controller
     {
         private readonly IIdentityServerInteractionService _interaction;

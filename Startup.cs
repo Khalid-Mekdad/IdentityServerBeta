@@ -13,6 +13,8 @@ using System.Reflection;
 using System;
 using Microsoft.AspNetCore.Identity;
 using StateOfTravel.Core.Aggregates;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using StateOfTravel.Constants;
 
 namespace StateOfTravel
 {
@@ -56,6 +58,7 @@ namespace StateOfTravel
 
             var builder = services.AddIdentityServer(options =>
             {
+                options.Authentication.CookieAuthenticationScheme = CustomIdentityServerConstants.AuthenticationScheme;
                 options.Events.RaiseErrorEvents = true;
                 options.Events.RaiseInformationEvents = true;
                 options.Events.RaiseFailureEvents = true;
@@ -80,8 +83,13 @@ namespace StateOfTravel
 
             // not recommended for production - you need to store your key material somewhere secure
             builder.AddDeveloperSigningCredential();
-
-            services.AddAuthentication()
+          
+            services.AddAuthentication(CustomIdentityServerConstants.AuthenticationScheme).AddCookie(CustomIdentityServerConstants.AuthenticationScheme, options =>
+            {
+                options.Cookie.Name = "Test";
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(2);
+                options.SlidingExpiration = true;
+            })
                 .AddGoogle(options =>
                 {
                     options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
@@ -92,6 +100,12 @@ namespace StateOfTravel
                     options.ClientId = "copy client ID from Google here";
                     options.ClientSecret = "copy client secret from Google here";
                 });
+
+            services.PostConfigure<CookieAuthenticationOptions>(IdentityConstants.ApplicationScheme, option =>
+            {
+                option.Cookie.Name = "Hello";
+                option.ExpireTimeSpan = TimeSpan.FromSeconds(30);
+            });
         }
 
         public void Configure(IApplicationBuilder app)
@@ -103,7 +117,7 @@ namespace StateOfTravel
             }
 
             app.UseStaticFiles();
-
+ 
             app.UseRouting();
             app.UseIdentityServer();
             app.UseAuthorization();

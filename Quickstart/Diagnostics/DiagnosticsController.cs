@@ -7,11 +7,12 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using StateOfTravel.Constants;
 
 namespace IdentityServerHost.Quickstart.UI
 {
     [SecurityHeaders]
-    [Authorize]
+    [Authorize(AuthenticationSchemes = CustomIdentityServerConstants.AuthenticationScheme)]
     public class DiagnosticsController : Controller
     {
         public async Task<IActionResult> Index()
@@ -22,7 +23,7 @@ namespace IdentityServerHost.Quickstart.UI
                 return NotFound();
             }
 
-            var model = new DiagnosticsViewModel(await HttpContext.AuthenticateAsync());
+            var model = new DiagnosticsViewModel(await HttpContext.AuthenticateAsync(CustomIdentityServerConstants.AuthenticationScheme));
             return View(model);
         }
     }

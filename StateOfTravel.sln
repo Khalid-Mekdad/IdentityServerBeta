@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StateOfTravel", "StateOfTravel.csproj", "{9038F280-4AB6-49AE-880E-66723B4D728D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateOfTravel.Core", "..\StateOfTravel.Core\StateOfTravel.Core.csproj", "{6F4BACB8-660C-41DB-98AC-8F7C7F40298E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StateOfTravel.Core", "..\StateOfTravel.Core\StateOfTravel.Core.csproj", "{6F4BACB8-660C-41DB-98AC-8F7C7F40298E}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "IdentityServerSQL", "..\IdentityServerSQL\IdentityServerSQL.sqlproj", "{9722AF7E-7709-49AE-8BD2-E70D91CF4EB6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,12 @@ Global
 		{6F4BACB8-660C-41DB-98AC-8F7C7F40298E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F4BACB8-660C-41DB-98AC-8F7C7F40298E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F4BACB8-660C-41DB-98AC-8F7C7F40298E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9722AF7E-7709-49AE-8BD2-E70D91CF4EB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9722AF7E-7709-49AE-8BD2-E70D91CF4EB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9722AF7E-7709-49AE-8BD2-E70D91CF4EB6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9722AF7E-7709-49AE-8BD2-E70D91CF4EB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9722AF7E-7709-49AE-8BD2-E70D91CF4EB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9722AF7E-7709-49AE-8BD2-E70D91CF4EB6}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
