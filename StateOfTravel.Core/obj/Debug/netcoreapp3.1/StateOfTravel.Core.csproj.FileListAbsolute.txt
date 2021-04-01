@@ -1,0 +1,9 @@
+S:\repos\StateOfTravel.Core\bin\Debug\netcoreapp3.1\StateOfTravel.Core.deps.json
+S:\repos\StateOfTravel.Core\bin\Debug\netcoreapp3.1\StateOfTravel.Core.dll
+S:\repos\StateOfTravel.Core\bin\Debug\netcoreapp3.1\StateOfTravel.Core.pdb
+S:\repos\StateOfTravel.Core\obj\Debug\netcoreapp3.1\StateOfTravel.Core.csprojAssemblyReference.cache
+S:\repos\StateOfTravel.Core\obj\Debug\netcoreapp3.1\StateOfTravel.Core.AssemblyInfoInputs.cache
+S:\repos\StateOfTravel.Core\obj\Debug\netcoreapp3.1\StateOfTravel.Core.AssemblyInfo.cs
+S:\repos\StateOfTravel.Core\obj\Debug\netcoreapp3.1\StateOfTravel.Core.csproj.CoreCompileInputs.cache
+S:\repos\StateOfTravel.Core\obj\Debug\netcoreapp3.1\StateOfTravel.Core.dll
+S:\repos\StateOfTravel.Core\obj\Debug\netcoreapp3.1\StateOfTravel.Core.pdb

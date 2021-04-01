@@ -3,3 +3,5 @@
 ################################################################################
 
 /IdentityServerSQL/bin/Debug/DeploymentReport.txt
+/IdentityServerSQL/bin/Debug/IdentityServerSQL.dacpac
+/IdentityServerSQL/bin/Debug/IdentityServerSQL.pdb

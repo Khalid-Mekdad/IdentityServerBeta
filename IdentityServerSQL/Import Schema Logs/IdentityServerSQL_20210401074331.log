@@ -1,0 +1,85 @@
+01-Apr-21 9:43:31 PM	This log contains information about the import schema operation into project 'IdentityServerSQL' on computer 'HOME-PC' by user 'Home'.
+01-Apr-21 9:43:31 PM	Import of database schema has started.
+01-Apr-21 9:43:53 PM	Gathering database credentials
+01-Apr-21 9:43:53 PM	Gathering database options
+01-Apr-21 9:43:53 PM	Gathering generic database scoped configuration option
+01-Apr-21 9:43:53 PM	Gathering users
+01-Apr-21 9:43:53 PM	Gathering roles
+01-Apr-21 9:43:53 PM	Gathering application roles
+01-Apr-21 9:43:53 PM	Gathering role memberships
+01-Apr-21 9:43:53 PM	Gathering filegroups
+01-Apr-21 9:43:53 PM	Gathering full-text catalogs
+01-Apr-21 9:43:53 PM	Gathering assemblies
+01-Apr-21 9:43:53 PM	Gathering certificates
+01-Apr-21 9:43:53 PM	Gathering asymmetric keys
+01-Apr-21 9:43:53 PM	Gathering symmetric keys
+01-Apr-21 9:43:53 PM	Gathering encrypted symmetric keys
+01-Apr-21 9:43:53 PM	Gathering schemas
+01-Apr-21 9:43:53 PM	Gathering XML schema collections
+01-Apr-21 9:43:53 PM	Gathering user-defined data types
+01-Apr-21 9:43:53 PM	Gathering user-defined types
+01-Apr-21 9:43:53 PM	Gathering table types
+01-Apr-21 9:43:53 PM	Gathering unique keys for table types
+01-Apr-21 9:43:53 PM	Gathering primary keys for table types
+01-Apr-21 9:43:53 PM	Gathering indexes for table types
+01-Apr-21 9:43:53 PM	Gathering check constraints for table types
+01-Apr-21 9:43:53 PM	Gathering default constraints for table types
+01-Apr-21 9:43:53 PM	Gathering partition functions
+01-Apr-21 9:43:53 PM	Gathering partition schemes
+01-Apr-21 9:43:57 PM	Gathering functions
+01-Apr-21 9:43:57 PM	Gathering encrypted functions
+01-Apr-21 9:43:57 PM	Gathering aggregates
+01-Apr-21 9:43:57 PM	Gathering procedures
+01-Apr-21 9:43:57 PM	Gathering encrypted procedures
+01-Apr-21 9:43:57 PM	Gathering tables
+01-Apr-21 9:43:57 PM	Gathering primary keys
+01-Apr-21 9:43:58 PM	Gathering unique constraints
+01-Apr-21 9:43:58 PM	Gathering foreign keys
+01-Apr-21 9:43:58 PM	Gathering default constraints
+01-Apr-21 9:43:58 PM	Gathering check constraints
+01-Apr-21 9:43:58 PM	Gathering views
+01-Apr-21 9:43:58 PM	Gathering encrypted views
+01-Apr-21 9:43:58 PM	Gathering indexes
+01-Apr-21 9:43:58 PM	Gathering statistics
+01-Apr-21 9:43:58 PM	Gathering full-text index stoplists
+01-Apr-21 9:43:58 PM	Gathering search property lists
+01-Apr-21 9:43:58 PM	Gathering search properties
+01-Apr-21 9:43:58 PM	Gathering full-text indexes
+01-Apr-21 9:43:58 PM	Gathering column store indexes
+01-Apr-21 9:43:58 PM	Gathering spatial indexes
+01-Apr-21 9:43:58 PM	Gathering XML indexes
+01-Apr-21 9:43:58 PM	Gathering Selective XML indexes
+01-Apr-21 9:43:58 PM	Gathering encrypted triggers
+01-Apr-21 9:43:58 PM	Gathering triggers
+01-Apr-21 9:43:58 PM	Gathering encrypted and clr ddl triggers
+01-Apr-21 9:43:58 PM	Gathering ddl triggers
+01-Apr-21 9:43:58 PM	Gathering synonyms
+01-Apr-21 9:43:58 PM	Gathering defaults
+01-Apr-21 9:43:58 PM	Gathering data constraint uddt bindings
+01-Apr-21 9:43:58 PM	Gathering rules
+01-Apr-21 9:43:58 PM	Gathering data constraint uddt bindings
+01-Apr-21 9:43:58 PM	Gathering message types
+01-Apr-21 9:43:58 PM	Gathering queues
+01-Apr-21 9:43:58 PM	Gathering contracts
+01-Apr-21 9:43:58 PM	Gathering services
+01-Apr-21 9:43:58 PM	Gathering event notifications
+01-Apr-21 9:43:58 PM	Gathering remote service bindings
+01-Apr-21 9:43:58 PM	Gathering broker priorities
+01-Apr-21 9:43:58 PM	Gathering signatures
+01-Apr-21 9:43:58 PM	Gathering data compression options
+01-Apr-21 9:43:58 PM	Gathering sequence types
+01-Apr-21 9:43:58 PM	Gathering security policies
+01-Apr-21 9:43:58 PM	Gather column encryption keys
+01-Apr-21 9:43:58 PM	Gathering column master keys
+01-Apr-21 9:43:58 PM	Gathering external data sources
+01-Apr-21 9:43:58 PM	Gathering external file formats
+01-Apr-21 9:43:58 PM	Gathering external tables
+01-Apr-21 9:43:58 PM	Gathering extended properties
+01-Apr-21 9:43:59 PM	Gathering credentials
+01-Apr-21 9:43:59 PM	Gathering logins
+01-Apr-21 9:43:59 PM	Gathering server audits
+01-Apr-21 9:44:00 PM	Scanning project for duplicate elements
+01-Apr-21 9:44:00 PM	Finished duplicate element processing
+01-Apr-21 9:44:06 PM	Finished importing database.
+01-Apr-21 9:44:06 PM	A summary of the import was saved to the following location: S:\repos\IdentityServerSQL\Import Schema Logs\IdentityServerSQL_20210401074331.log
+01-Apr-21 9:44:06 PM	Click Finish to continue...
