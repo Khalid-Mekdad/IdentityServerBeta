@@ -99,7 +99,7 @@ namespace StateOfTravel
             services.PostConfigure<CookieAuthenticationOptions>(IdentityConstants.ApplicationScheme, option =>
             {
                 //option.Cookie.Name = CustomIdentityServerConstants.AuthenticationScheme;
-                option.ExpireTimeSpan = TimeSpan.FromMinutes(1);
+                option.ExpireTimeSpan = TimeSpan.FromDays(30);
             });
         }
 
