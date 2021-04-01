@@ -159,6 +159,8 @@ namespace IdentityServerHost.Quickstart.UI
                 // validate username/password against in-memory store
                 if (signInResult.Succeeded)
                 {
+                    await _signInManager.PasswordSignInAsync(user, model.Password, model.RememberLogin, false);
+
                     await _events.RaiseAsync(new UserLoginSuccessEvent("ASPIdentity", user.Id, user.UserName, clientId: context?.Client.ClientId));
 
                     // only set explicit expiration here if user chooses "remember me". 
@@ -174,17 +176,18 @@ namespace IdentityServerHost.Quickstart.UI
                     //};
 
                     //// issue authentication cookie with subject ID and username
-                    var props = new AuthenticationProperties
-                    {
-                        IsPersistent = true,
-                        ExpiresUtc = DateTimeOffset.UtcNow.Add(AccountOptions.RememberMeLoginDuration),
-                    };
-                    var isuser = new IdentityServerUser(user.Id)
-                    {
-                        DisplayName = user.UserName
-                    };
 
-                    await HttpContext.SignInAsync(CustomIdentityServerConstants.AuthenticationScheme, isuser.CreatePrincipal());
+                    //var props = new AuthenticationProperties
+                    //{
+                    //    IsPersistent = true,
+                    //    ExpiresUtc = DateTimeOffset.UtcNow.Add(AccountOptions.RememberMeLoginDuration),
+                    //};
+                    //var isuser = new IdentityServerUser(user.Id)
+                    //{
+                    //    DisplayName = user.UserName
+                    //};
+
+                    //await HttpContext.SignInAsync(, isuser.CreatePrincipal());
 
                     if (context != null)
                     {
@@ -257,7 +260,7 @@ namespace IdentityServerHost.Quickstart.UI
             if (User?.Identity.IsAuthenticated == true)
             {
                 // delete local authentication cookie
-                await HttpContext.SignOutAsync(CustomIdentityServerConstants.AuthenticationScheme);
+                await _signInManager.SignOutAsync();
 
                 // raise the logout event
                 await _events.RaiseAsync(new UserLogoutSuccessEvent(User.GetSubjectId(), User.GetDisplayName()));

@@ -19,7 +19,7 @@ namespace IdentityServerHost.Quickstart.UI
     /// This sample controller allows a user to revoke grants given to clients
     /// </summary>
     [SecurityHeaders]
-    [Authorize(AuthenticationSchemes = CustomIdentityServerConstants.AuthenticationScheme)]
+    [Authorize]
     public class GrantsController : Controller
     {
         private readonly IIdentityServerInteractionService _interaction;

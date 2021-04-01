@@ -14,7 +14,6 @@ using System.Threading.Tasks;
 using IdentityServer4.Validation;
 using System.Collections.Generic;
 using System;
-using StateOfTravel.Constants;
 
 namespace IdentityServerHost.Quickstart.UI
 {
@@ -22,7 +21,7 @@ namespace IdentityServerHost.Quickstart.UI
     /// This controller processes the consent UI
     /// </summary>
     [SecurityHeaders]
-    [Authorize(AuthenticationSchemes = CustomIdentityServerConstants.AuthenticationScheme)]
+    [Authorize]
     public class ConsentController : Controller
     {
         private readonly IIdentityServerInteractionService _interaction;

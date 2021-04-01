@@ -12,7 +12,7 @@ using StateOfTravel.Constants;
 namespace IdentityServerHost.Quickstart.UI
 {
     [SecurityHeaders]
-    [Authorize(AuthenticationSchemes = CustomIdentityServerConstants.AuthenticationScheme)]
+    [Authorize()]
     public class DiagnosticsController : Controller
     {
         public async Task<IActionResult> Index()
@@ -23,7 +23,7 @@ namespace IdentityServerHost.Quickstart.UI
                 return NotFound();
             }
 
-            var model = new DiagnosticsViewModel(await HttpContext.AuthenticateAsync(CustomIdentityServerConstants.AuthenticationScheme));
+            var model = new DiagnosticsViewModel(await HttpContext.AuthenticateAsync());
             return View(model);
         }
     }

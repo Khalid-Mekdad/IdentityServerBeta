@@ -58,7 +58,7 @@ namespace StateOfTravel
 
             var builder = services.AddIdentityServer(options =>
             {
-                options.Authentication.CookieAuthenticationScheme = CustomIdentityServerConstants.AuthenticationScheme;
+                options.Authentication.CookieAuthenticationScheme = IdentityConstants.ApplicationScheme;
                 options.Events.RaiseErrorEvents = true;
                 options.Events.RaiseInformationEvents = true;
                 options.Events.RaiseFailureEvents = true;
@@ -84,12 +84,7 @@ namespace StateOfTravel
             // not recommended for production - you need to store your key material somewhere secure
             builder.AddDeveloperSigningCredential();
           
-            services.AddAuthentication(CustomIdentityServerConstants.AuthenticationScheme).AddCookie(CustomIdentityServerConstants.AuthenticationScheme, options =>
-            {
-                options.Cookie.Name = "Test";
-                options.ExpireTimeSpan = TimeSpan.FromMinutes(2);
-                options.SlidingExpiration = true;
-            })
+            services.AddAuthentication() 
                 .AddGoogle(options =>
                 {
                     options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
@@ -103,8 +98,8 @@ namespace StateOfTravel
 
             services.PostConfigure<CookieAuthenticationOptions>(IdentityConstants.ApplicationScheme, option =>
             {
-                option.Cookie.Name = "Hello";
-                option.ExpireTimeSpan = TimeSpan.FromSeconds(30);
+                //option.Cookie.Name = CustomIdentityServerConstants.AuthenticationScheme;
+                option.ExpireTimeSpan = TimeSpan.FromMinutes(1);
             });
         }
 

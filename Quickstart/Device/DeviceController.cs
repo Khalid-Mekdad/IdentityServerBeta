@@ -16,11 +16,10 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using StateOfTravel.Constants;
 
 namespace IdentityServerHost.Quickstart.UI
 {
-    [Authorize(AuthenticationSchemes = CustomIdentityServerConstants.AuthenticationScheme)]
+    [Authorize]
     [SecurityHeaders]
     public class DeviceController : Controller
     {
